@@ -1,0 +1,16 @@
+{
+    "log": { "loglevel": "warning" },
+    "inbounds": [{
+        "port": 8080,
+        "protocol": "vless",
+        "settings": {
+            "clients": [{ "id": "9059550b-8534-44a6-8e50-482f71694f4b" }],
+            "decryption": "none"
+        },
+        "streamSettings": {
+            "network": "ws",
+            "wsSettings": { "path": "/TelegramBot" }
+        }
+    }],
+    "outbounds": [{ "protocol": "freedom" }]
+}
